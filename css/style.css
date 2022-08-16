@@ -82,6 +82,7 @@ body{
     text-align: center;
     color: yellow;
     text-shadow: .1rem .1rem .1rem black;
+    text-transform: capitalize;
 }
 
 @keyframes rotate {
@@ -94,7 +95,7 @@ body{
         font-size: 2.5rem;
 }
     100%{
-        color: sienna;
+        color: rgb(237, 237, 6);
     }
 }
 @keyframes cahngeColor {
