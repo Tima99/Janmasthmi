@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body{
+    height: 100vh;
+}
+.touch-me{
+    cursor: pointer;
+    width: 100%;
+    max-width: 550px;
+    min-height: 100%;
+    background-image: url('../img/matki.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* display: none; */
+}
+.touch-me-text{
+    position: absolute;
+    text-align: center;
+    margin-top: 1rem;
+    text-shadow: 0 0 .35rem royalblue;
+    color: saddlebrown;
+    animation: move .8s infinite alternate ease;
+    -webkit-animation: move .8s infinite alternate ease;
+}
+
+@keyframes move {
+    0%{
+        font-size: 1.2rem;
+    }
+    100%{
+        font-size: 1.5rem;
+    }
+}
+
+.congrats-box{
+    width: 100%;
+    max-width: 550px;
+    min-height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    display: none;
+}
+.congrats-box-bg{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    filter: blur(.07rem);
+    -webkit-filter: blur(.07rem);
+    animation: cahngeColor 30s infinite alternate ease;
+    -webkit-animation: cahngeColor 30s infinite alternate ease;
+    animation-delay: 2s;
+    background-color: white;
+}
+
+.name-box{
+    background-color: saddlebrown;
+    width: 100%;
+}
+.congrats-box .name{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1.7rem 0;
+    animation: rotate 1s infinite alternate ease;
+    -webkit-animation: rotate 1s infinite alternate ease;
+    height: fit-content;
+    text-align: center;
+    color: saddlebrown;
+    text-shadow: .1rem .1rem .1rem black;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        font-size: 2.5rem;
+}
+    100%{
+        color: sienna;
+    }
+}
+@keyframes cahngeColor {
+    0%{
+        background-color: seashell;
+    }
+    25%{
+        background-color: rgb(240, 240, 8, .7); 
+    }
+    50%{
+        background-color: rgba(46, 139, 87, .9);
+    }
+    75%{
+        background-color: rgba(65, 105, 225, .5);
+    }
+    100%{
+        background-color: rgba(238, 130, 238, .9);
+    }
+}
+
+img{
+    z-index: 99;
+}
+
+#congtes-text{
+    width: 90%;
+}
+.inputs{
+    width: 100vw;
+    margin: auto;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    bottom: .5rem;
+    z-index: 99;
+}
+.inputs-box{
+    display: none;
+}
+#nameInput{
+    width: 94%;
+    z-index: 999;
+    line-height: 2rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    border: .2rem solid royalblue;
+    margin: 0 .5rem;
+    background-color: rgb(212, 212, 13);
+    font-size: 1.2rem;
+    padding: .5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#krishna{
+    margin-bottom: 10vh;
+}
+.button{
+    padding: .7rem 1rem;
+    background-color: royalblue;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    margin: 0 1rem 0 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    border: .2rem solid blue;
+    outline: none;
+    cursor: pointer;
+}
+#whatsappBtn{
+    width: 90%;
+    height: 10vh;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    background-color: rgb(17,158,6);
+    animation: rotateW 1s infinite alternate;
+    -webkit-animation: rotateW 1s infinite alternate;
+    margin-bottom: 1rem;
+    border: .1rem solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    display: none;
+    max-width: 540px;
+}
+#whatsappBtn button{
+    font-size: 1.25rem;
+    font-weight: bolder;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+@keyframes rotateW {
+    0%{
+        transform: rotate(3deg);
+        -webkit-transform: rotate(3deg);
+        -moz-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+        -o-transform: rotate(3deg);
+        font-size: 1.35rem;
+}
+}
