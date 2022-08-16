@@ -64,6 +64,9 @@ body{
     -webkit-animation: cahngeColor 30s infinite alternate ease;
     animation-delay: 2s;
     background-color: white;
+    background-image: url(https://createcustomwishes.com/wp-content/uploads/2020/06/Photos-Images-Wallpaper-for-Janmashtami.jpg);
+    /* background-repeat: no-repeat */
+    background-size: 100% 100%;
 }
 
 .name-box{
