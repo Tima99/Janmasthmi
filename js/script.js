@@ -12,7 +12,7 @@ function see(btn){
     btn.parentElement.style.display = 'none'
     const wapp = btn.parentElement.nextElementSibling
     wapp.style.display = 'flex';
-    wapp.href = `whatsapp://send?text= **${__name}ने आपके लिए कुछ भेजा है %0Aजल्दी से *नीली लाइन* को टच करके देखो  %0A👇 👇%0Aclick-karo.site/?n=${__name.replaceAll(' ','_')}`
+    wapp.href = `whatsapp://send?text= **${__name} ने आपके लिए कुछ भेजा है %0Aजल्दी से *नीली लाइन* को टच करके देखो  %0A👇 👇%0Aclick-karo.site/?n=${__name.replaceAll(' ','_')}`
     console.log(wapp.href)
 }
 
